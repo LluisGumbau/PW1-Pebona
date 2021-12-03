@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/pages/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./css/pages/normalize.css" type="text/css" rel="stylesheet"/>
+    <title>Pebona - Main Window</title>
+</head>
+<body>
+    <header>
+        <!-- Div que engloba tot el contingut del header -->
+        <div class="div-header">
+            <a href=""><img src="media/img/logo_pebona.png" alt="Logo Pebona" id="logo-pebona"></a>
+            <div id="header-sections">
+                <!-- Aqui poso un nav, perque cada desplegable et portaria a un html diferent-->
+                <nav>
+                    <ul id="llista-header">
+                        <li><a href="">HOME<span class="material-icons-outlined">expand_more</span></a></li>
+                        <li><a href="">SHOP<span class="material-icons-outlined">expand_more</span></a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">PRODUCTS<span class="material-icons-outlined">expand_more</span></a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Input amb l'icona de cerca del header-->
+            <div id="div-busqueda">
+                <input type="text" placeholder="Search our store" class="label-busqueda">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <!-- Icones de compra i configuració del header-->
+            <div id="icones-header">
+                <div id="icono-cistell">
+                    <!-- Posem ambdues icones dins d'una a, ja que aquestes et reedirigirien cap a una altre finestra-->
+                    <a href="">
+                        <span class="material-icons-outlined">
+                            shopping_bag
+                        </span>
+                        <p>0</p>     
+                    </a>
+                </div>
+                <div id="icono-config">
+                    <a href="">
+                        <span class="material-icons-outlined">
+                            settings
+                            </span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <!-- Div que engloba tot el grid amb les imatges promocionals de la web -->
+        <div id="images-container">
+            <!-- Div amb el contigut de la primera imatge, amb el text inclòs -->
+            <div class="product1">
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/slide-1_3e514a28-4061-4b2d-bb13-28682e3520e7.jpg?v=1538904304" alt="Model dessuadora" class="image1">
+                <div id="info-product1">
+                    <div id="limited-edition">
+                        <p id="p-le">LIMITED EDITION</p> 
+                    </div>
+                    <div id="sale-ofer"><p>Sale Ofer 20% Off This Week</p></div>
+                    <div id="explore-now">
+                        <h1>Sport Sneaker 2018</h1>
+                        <p>EXPLORE NOW</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Divs amb el contigut del grid -->
+            <div class="product2">
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-11_cb5b2a35-f164-488e-a02d-c66267b4a16c.jpg?v=1538904380)" alt="Imatge Armilla" class="image2">
+            </div>
+            <div class="product3">
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-12_d32131a9-3376-4559-9fe1-4e7f9dda7d0e.jpg?v=1538904394)" alt="Ulleres de sol" class="image3">
+            </div>
+            <div class="product4">
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-13_74db4690-c61e-46b1-9f90-4abebf720c94.jpg?v=1538904402)" alt="Bambes Nike" class="image4">
+            </div>
+            <div class="product5">
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-14.jpg?v=1537617822)" alt="Sabates roses" class="image5">
+            </div>
+            <div class="product6">
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-15.jpg?v=1537617829)" alt="Imatge accessoris" class="image6">
+            </div> 
+            <div class="product7">
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-16.jpg?v=1537617841)" alt="Imatge Motxilla" class="image7">
+            </div>
+            <div class="product8">
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/files/banner-17.jpg?v=1537617851)" alt="Model Pèl-roja" class="image8">
+            </div>
+        </div>
+        <!-- Div que engloba tot el contingut que hi ha limitat pel grid i pel footer -->
+        <div id="container-title">
+            <!-- Div on emmagatzemem la capçelera d'aquesta secció -->
+            <div id="cont-title">
+                <h1><strong>New Trending Products</strong></h1>
+                <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/t/2/assets/title.png" alt="Logo title">
+                <p>Accumsan vitae pede lacus ut ullamcorper sollicitudin quisque libero est</p>
+            </div>
+            <!-- Div que engloba els 6 productes que ens recomana la web -->
+            <div id="img-trendings">
+                <!-- Tots els elements que formen el div amb el primer producte -->
+                <div id="img-tr-product1">
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/products/product_13_664978c2-d878-43ca-99b1-c4c46170f0ac_large.jpg?v=1571714767" alt="Cartera" class="img-tr-1">
+                    <div class="contaier-img-tr">
+                        <p class="p-product">Krystle</p>
+                        <div class="stars">
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                        </div>
+                    </div>
+                    <div class="animacio-sb">
+                        <a href=""><span id="span-nom-producte">Parezca New Razonable</span></a>
+                    </div>
+                    <div class="product-prices">
+                        <p class="price-product">$526.00</p>
+                        <p class="real-price">$500.00</p>
+                    </div>    
+                    <div class="descompte">
+                        <p>5%</p>
+                    </div>
+                    <div class="info-plus">
+                        <a href=""><span class="material-icons-outlined">shopping_bag</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">favorite_border</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">insert_link</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">search</span></a>
+                    </div>
+                </div>
+                <!-- Tots els elements que formen el div amb el segon producte -->
+                <div id="img-tr-product2">
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/products/product_5_f073bdbe-103c-4341-9348-cb7fbf62087c_large.jpg?v=1571714766" alt="Bambes Nike" class="img-tr-2">
+                    <div class="contaier-img-tr">
+                        <p class="p-product">Glus</p>
+                        <div class="stars">
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                        </div>
+                    </div>
+                    <div class="animacio-sb">
+                        <a href=""><span class="span-nom-producte">Lorem Ipsum</span></a>
+                    </div>
+                    <div class="product-prices">
+                        <p class="price-product">$555.00</p>
+                        <p class="real-price">$500.00</p>
+                    </div>
+                    <div class="descompte">
+                        <p>10%</p>
+                    </div>
+                    <div class="info-plus">
+                        <a href=""><span class="material-icons-outlined">shopping_bag</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">favorite_border</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">insert_link</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">search</span></a>
+                    </div>
+                </div>
+                <!-- Tots els elements que formen el div amb el tercer producte -->
+                <div id="img-tr-product3">
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/products/product_6_e8c8fda6-8c7f-4adb-8f0a-e46272b3b714_large.jpg?v=1571714766" alt="Motxilla Blava" class="img-tr-3">
+                    <div class="contaier-img-tr">
+                        <p class="p-product">Generic</p>
+                        <div class="stars">
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                        </div>
+                    </div>
+                    <div class="animacio-sb">
+                        <a href=""><span class="span-nom-producte">Pensamiento Popular</span></a>
+                    </div>
+                    <div class="product-prices">
+                        <p class="price-product">$366.00</p>
+                        <p class="real-price">$258.00</p>
+                    </div>
+                    <div class="descompte">
+                        <p>30%</p>
+                    </div>
+                    <div class="info-plus">
+                        <a href=""><span class="material-icons-outlined">shopping_bag</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">favorite_border</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">insert_link</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">search</span></a>
+                    </div>
+                </div>
+                <!-- Tots els elements que formen el div amb el quart producte -->
+                <div id="img-tr-product4">
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/products/product_10_37630cd1-1590-4d25-982b-e513c20c72d0_large.jpg?v=1571714766" alt="Ulleres de sol" class="img-tr-4">
+                    <div class="contaier-img-tr">
+                        <p class="p-product">Imara</p>
+                        <div class="stars">
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                        </div>
+                    </div>
+                    <div class="animacio-sb">
+                        <a href=""><span class="span-nom-producte">Predefinidos Cuando</span></a>
+                    </div>
+                    <div class="product-prices">
+                        <p class="price-product">$190.00</p>
+                        <p class="real-price">$180.00</p>
+                    </div>
+                    <div class="descompte">
+                        <p>6%</p>
+                    </div>
+                    <div class="info-plus">
+                        <a href=""><span class="material-icons-outlined">shopping_bag</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">favorite_border</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">insert_link</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">search</span></a>
+                    </div>
+                </div>
+                <!-- Tots els elements que formen el div amb el cinqué producte -->
+                <div id="img-tr-product5">
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/products/Product-15_large.png?v=1571714767" alt="Mitjó de nadal" class="img-tr-5">
+                    <div class="contaier-img-tr">
+                        <p class="p-product">Krystle</p>
+                        <div class="stars">
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                        </div>
+                    </div>
+                    <div class="animacio-sb">
+                        <a href=""><span class="span-nom-producte">Parezca New Razonable...</span></a>
+                    </div>
+                    <div class="product-prices">
+                        <p class="price-product">$526.00</p>
+                        <p class="real-price">$500.00</p>
+                    </div>
+                    <div class="descompte">
+                        <p>5%</p>
+                    </div>
+                    <div class="info-plus">
+                        <a href=""><span class="material-icons-outlined">shopping_bag</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">favorite_border</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">insert_link</span></a><p>|</p>
+                        <a href=""><span class="material-icons-outlined">search</span></a>
+                    </div>
+                </div>
+                <!-- Tots els elements que formen el div amb el sisé producte -->
+                <div id="img-tr-product6">
+                    <img src="https://cdn.shopify.com/s/files/1/0049/9043/5439/products/Produc-7_93aee2bd-341d-44e4-98b8-c75db67f2fc5_large.png?v=1571714767" alt="Adorns nadalencs" class="img-tr-6">
+                    <div class="contaier-img-tr">
+                        <p class="p-product">Glus</p>
+                        <div class="stars">
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                            <span class="material-icons-outlined">star_border</span>
+                        </div>
+                    </div>
+                    <div class="animacio-sb">
+                        <a href=""><span class="span-nom-producte">Quedando Esencialmente...</span></a>
+                    </div>
+                    <div class="product-prices">
+                        <p class="price-product">$559.00</p>
+                        <p class="real-price">$526.00</p>
+                    </div>
+                    <div class="descompte">
+                        <p>6%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- Div on tenim tot el contingut del footer-->
+        <div id="div-footer">
+            <div id="img-footer">
+                <a href=""><img src="media/img/logo_pebona.png" alt="Logo Pebona" id="logo-pebona-footer"></a>
+                <p><em>Copyright ©  2018 <a href=""><strong>Pebona</strong></a> Themes. All <br>Right Reserved</em></p>
+            </div>
+            <div id="newsletter-footer">
+                <p><strong>Sign Up For Our Newsletter</strong></p>
+                <p class="get-email">Get E-mail updates about our latest shop and special offers</p>
+            </div>
+            <div id="youremail-footer">
+                <input type="text" placeholder="Your Email Address" class="your-email">
+            </div>
+            <div id="button-youremail">
+                <button class="send-button">SING UP</button>
+            </div>
+            <div id="xarxes-socials">
+                <!-- Utilitzo un nav, ja que si fem click sobre qualsevol xarxa, lo ideal seria que et portes a la xarxa social de la marca -->
+                <nav>
+                    <ul id="llista-xarxes">
+                        <li id="twitter"><a href="#" class="fa fa-twitter"></a></li>
+                        <li id="instagram"><a href="#" class="fa fa-instagram"></a></li>
+                        <li id="google"><a href="#" class="fa fa-google"></a></li>
+                        <li id="in-red"><a href="#" class="fa fa-linkedin"></a></li>
+                        <li id="pinterest"><a href="#" class="fa fa-pinterest"></a></li>
+                        <li id="in-blue"><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
